@@ -26,8 +26,7 @@ class Bullet:
     def draw(self):
         pygame.draw.rect(screen, (250, 250, 250), (self.xpos, self.ypos, 3, 20))
         
-#instantiate bullet object
-bullet = Bullet(xpos+28, ypos)
+
 
 
 class Enemy:
@@ -122,7 +121,8 @@ class spaceship:
 #instantiate a spaceship object from the class
 player = spaceship(450)
 
-
+#instantiate bullet object
+bullet = Bullet(player.xpos,600)
 
 
 while True:  
