@@ -62,7 +62,7 @@ for i in range(4): #Rows
     for j in range(10): #Columns
         ballin.append(Enemy(j*60+45, i*60+40))
     
-class spaceship:
+class daship:
     def __init__(self, xpos):
         self.xpos = xpos
         self.alive = True
@@ -119,7 +119,7 @@ class spaceship:
   
 
 #instantiate a spaceship object from the class
-player = spaceship(450)
+player = daship(450)
 
 #instantiate bullet object
 bullet = Bullet(player.xpos,600)
